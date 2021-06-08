@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container border">
+        <form class="needs-validation" novalidate>
+            <div class="row">
+                <div class="col-3 border p-2">
+                    <p>El contribuyente solicitó asistenciadel funcionario Municipal paracompletar la presente Declaración</p>
+                    <div class="row">
+                        <div class="col-5">
+                            <div>
+                                <input required type="radio" class="btn-check is-valid" name="options" id="option2" autocomplete="off" required />
+                                <label class="btn btn-light border-dark" for="option2">Si&nbsp;</label>
+                            </div>
+                            <div>
+                                <input required type="radio" class="btn-check is-valid" name="options" id="option3" autocomplete="off" required />
+                                <label class="btn btn-light border" for="option3">No</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="row">
+                                <input type="text" class="is-valid" required>
+                                <p class="" style="text-align: center;">Firma</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7 border text-center p-2">
+                    <h3 class="p-2">MUNICIPALIDAD DE DESAMPARADOS</h3>
+                    <h5 class="p-2">DECLARACIÓN DEL IMPUESTO SOBRE BIENES INMUEBLES</h5>
+                    <div class="p-2" style="text-align: right;">
+                        <p style="text-align: right; display: inline;">ZONA HOMOGENEA</p>
+                        <input required type="text" style="text-align: right; display: inline;" required>
+                    </div>
+                </div>
+                <div class="row container col-2 mx-auto" style="width: auto;">
+                    <img class="p-4 m-1" src="img/Capture.PNG" alt="">
+                </div>
+            </div>
+            <div class="row border text-center">
+                <h4>CUADRO I. IDENTIFICACIÓN DEL PROPIETARIO</h4>
+            </div>
+            <div class="row border">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="mb-3">
+                            <label for="cedula" class="form-label">1. N° DE CÉDULA (física o jurídica)</label>
+                            <input type="text" class="form-control" id="cedula" aria-describedby="emailHelp" required>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">2. APELLIDOS Y NOMBRE O RAZÓN SOCIAL</label>
+                            <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mb-3">
+                        <label for="domicilio" class="form-label">3. DOMICILIO FISCAL (SEÑAS)</label>
+                        <input type="text" class="form-control" id="domicilio" aria-describedby="emailHelp" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="provincia" class="form-label">4. PROVINCIA  </label>
+                            <input type="text" class="form-control" id="provincia" aria-describedby="emailHelp" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="canton" class="form-label">5. N° CANTÓN</label>
+                            <input type="text" class="form-control" id="canton" aria-describedby="emailHelp" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="diatrito" class="form-label">6. DISTRITO</label>
+                            <input type="text" class="form-control" id="diatrito" aria-describedby="emailHelp" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">7. N° TELEFONO</label>
+                            <input type="number" class="form-control" id="telefono" aria-describedby="emailHelp" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="fax" class="form-label">8. N° FAX</label>
+                            <input type="number" class="form-control" id="fax" aria-describedby="emailHelp" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3 align-items-center">
+                    <div class="col-auto">
+                        <label for="correo" class="col-form-label">9. CORREO ELECTRONICO PARA NOTIFICACIONES:</label>
+                    </div>
+                    <div class="col mb-auto">
+                        <input type="email" id="correo" class="form-control" aria-describedby="passwordHelpInline" required>
+                    </div>
+                </div>
+                <center>
+                    <div class="row border" style="text-align: left;">
+                        <h5>EN CASO DE PERSONA JURIDICA ANOTAR DATOS DEL REPRESENTANTE LEGAL</h5>
+                    </div>
+                </center>
+
+                <div class="row">
+                    <div class="col-4">
+                        <div class="mb-3">
+                            <label for="cedula" class="form-label">10. N° DE CÉDULA</label>
+                            <input type="text" class="form-control" id="cedula" aria-describedby="emailHelp" required>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">11. APELLIDOS Y NOMBRE O RAZÓN SOCIAL</label>
+                            <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mb-3">
+                        <label for="domicilio" class="form-label">12. DOMICILIO FISCAL (SEÑAS)</label>
+                        <input required type="text" class="form-control" id="domicilio" aria-describedby="emailHelp">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="provincia" class="form-label">13. PROVINCIA  </label>
+                            <input required type="text" class="form-control" id="provincia" aria-describedby="emailHelp">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="canton" class="form-label">14. N° CANTÓN</label>
+                            <input required type="text" class="form-control" id="canton" aria-describedby="emailHelp">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="diatrito" class="form-label">15. DISTRITO</label>
+                            <input required type="text" class="form-control" id="diatrito" aria-describedby="emailHelp">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">16. N° TELEFONO</label>
+                            <input required type="number" class="form-control" id="telefono" aria-describedby="emailHelp">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="fax" class="form-label">17. N° FAX</label>
+                            <input required type="number" class="form-control" id="fax" aria-describedby="emailHelp">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3 align-items-center">
+                    <div class="col-auto">
+                        <label for="correo" class="col-form-label">18. CORREO ELECTRONICO PARA NOTIFICACIONES:</label>
+                    </div>
+                    <div class="col mb-auto">
+                        <input required type="email" id="correo" class="form-control" aria-describedby="passwordHelpInline">
+                    </div>
+                </div>
+            </div>
+            <div class="row border text-center">
+                <h5>CUADRO II. IDENTIFICACIÓN DE LA PROPIEDAD</h5>
+            </div>
+            <div class="row align-items-center">
+                <div class="row">
+                    <div class="col-2 mb-3">
+                        <label for="correo" class="col-form-label">19. UBICACION</label>
+                    </div>
+                    <div class="col-3">
+                        <div class="row align-items-center">
+                            <div class="col-auto mb-3">
+                                <label for="correo" class="col-form-label">Distrito</label>
+                            </div>
+                            <div class="col mb-3">
+                                <input required type="email" id="correo" class="form-control" aria-describedby="passwordHelpInline">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-7 mb-3">
+                        <div class="row align-items-center">
+                            <div class="col-auto mb-3">
+                                <label for="correo" class="col-form-label">Dirección Exacta</label>
+                            </div>
+                            <div class="col mb-3">
+                                <input required type="email" id="correo" class="form-control" aria-describedby="passwordHelpInline">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="row">
+                    <div class="col-auto">
+                        <label for="correo" class="col-form-label">20. N° DE FINCA:</label>
+                    </div>
+                    <div class="col">
+                        <input required type="number" id="correo" class="form-control" aria-describedby="passwordHelpInline">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="row">
+                    <div class="col-7">
+                        <div class="mb-3">
+                            <label for="fax" class="form-label">21.N° PLANO CATASTRO</label>
+                            <input required type="number" class="form-control" id="fax" aria-describedby="emailHelp">
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="mb-3">
+                            <label for="fax" class="form-label">22. AREA (M CUADRADOS)</label>
+                            <input required type="number" class="form-control" id="fax" aria-describedby="emailHelp">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-5">
+                    <div class="row">
+                        <label for="fax" class="form-label">23. SERVICIOS PÚBLICOS QUE POSEE:</label>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label class="form-check-label" for="flexCheckDefault">Acera</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                                <label class="form-check-label" for="flexCheckChecked">Cordon y cañon</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                                <label class="form-check-label" for="flexCheckChecked">Cañeria</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                                <label class="form-check-label" for="flexCheckChecked">Alcantarillado</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label class="form-check-label" for="flexCheckDefault">Telefono</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                                <label class="form-check-label" for="flexCheckChecked">Electricidad</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                                <label class="form-check-label" for="flexCheckChecked">Alumbrado publico</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                                <label class="form-check-label" for="flexCheckChecked">Todos los anteriores</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="row">
+                        <label for="fax" class="form-label">24. VIA ACCESO PRINCIPAL</label>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label class="form-check-label" for="flexCheckDefault">Camino asfaltado</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                                <label class="form-check-label" for="flexCheckChecked">Camino de lastre</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                                <label class="form-check-label" for="flexCheckChecked">Línea férrea   </label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label class="form-check-label" for="flexCheckDefault">Alameda</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                                <label class="form-check-label" for="flexCheckChecked">Camino de tierra</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                                <label class="form-check-label" for="flexCheckChecked">Servidumbre</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="row">
+                        <div class="row">
+                            <label for="fax" class="form-label">25. FRENTE  PROPIEDAD</label>
+                        </div>
+                        <div class="row mb-3 align-items-center">
+                            <div class="col mb-auto">
+                                <input required type="number" id="correo" class="form-control" aria-describedby="passwordHelpInline">
+                            </div>
+                            <div class="col-auto">
+                                <label for="correo" class="col-form-label">metros</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label for="fax" class="form-label">26. REGULARIDAD</label>
+                        </div>
+                        <div class="row">
+                            <div class="col form-check form-check-inline">
+                                <input required class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
+                                <label class="form-check-label" for="inlineRadio1">Regular</label>
+                            </div>
+
+                            <div class="col form-check form-check-inline">
+                                <input required class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+                                <label class="form-check-label" for="inlineRadio2">Irregualar</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col mb-3">
+                                <input required type="number" id="correo" class="form-control" aria-describedby="passwordHelpInline">
+                            </div>
+                            <div class="col-auto">
+                                <label for="correo" class="col-form-label">%</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <div class="row">
+                        <label for="fax" class="form-label">27. PENDIENTE:</label>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label class="form-check-label" for="flexCheckDefault">Plano (0 - 5%)</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                                <label class="form-check-label" for="flexCheckChecked">accidentado (16 -30%)</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                                <label class="form-check-label" for="flexCheckChecked">Quebrado (45-60%)</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label class="form-check-label" for="flexCheckDefault">Ondulado (5-15%)</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                                <label class="form-check-label" for="flexCheckChecked">Muy accidentado</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                                <label class="form-check-label" for="flexCheckChecked">Muy quebrado</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="row">
+                        <label for="fax" class="form-label">28. NIVEL</label>
+                    </div>
+                    <div class="row">
+                        <div class="col-auto ">
+                            <label for="correo" class="col-form-label">A nivel</label>
+                        </div>
+                        <div class="col ">
+                            <input required type="number" id="correo" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-auto ">
+                            <label for="correo" class="col-form-label">Sobre nivel</label>
+                        </div>
+                        <div class="col ">
+                            <input required type="number" id="correo" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                        <div class="col-auto ">
+                            <label for="correo" class="col-form-label">Metros</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-auto ">
+                            <label for="correo" class="col-form-label">Bajo nivel</label>
+                        </div>
+                        <div class="col ">
+                            <input required type="number" id="correo" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                        <div class="col-auto ">
+                            <label for="correo" class="col-form-label">Metros</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="row">
+                        <label for="fax" class="form-label">29.UBICACIÓN EN LA MANZANA:</label>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label class="form-check-label" for="flexCheckDefault">Manzanero </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                                <label class="form-check-label" for="flexCheckChecked">cabecero</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                                <label class="form-check-label" for="flexCheckChecked">esquinero</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label class="form-check-label" for="flexCheckDefault">Medianero</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                                <label class="form-check-label" for="flexCheckChecked">En callejón lateral</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                                <label class="form-check-label" for="flexCheckChecked">En callejón al fondo</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <label for="fax" class="form-label">30. HIDROLOGIA</label>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label class="form-check-label" for="flexCheckDefault">Excelente</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                                <label class="form-check-label" for="flexCheckChecked">Muy bueno</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                                <label class="form-check-label" for="flexCheckChecked">Malo</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label class="form-check-label" for="flexCheckDefault">Bueno</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                                <label class="form-check-label" for="flexCheckChecked">Regular</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <label for="fax" class="form-label">31. USO DEL SUELO</label>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label class="form-check-label" for="flexCheckDefault">Excelente</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                                <label class="form-check-label" for="flexCheckChecked">Muy bueno</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                                <label class="form-check-label" for="flexCheckChecked">Malo</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label class="form-check-label" for="flexCheckDefault">Bueno</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                                <label class="form-check-label" for="flexCheckChecked">Regular</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <label for="fax" class="form-label">32. VALOR UNITARIO DEL TERRENO</label>
+                    </div>
+                    <div class="row">
+                        <div class="col-auto ">
+                            <label for="correo" class="col-form-label">¢</label>
+                        </div>
+                        <div class="col-5">
+                            <input required type="number" id="correo" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                        <div class="col-auto ">
+                            <label for="correo" class="col-form-label">/Metro cuadrado</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-auto ">
+                            <label for="correo" class="col-form-label">¢</label>
+                        </div>
+                        <div class="col-5">
+                            <input required type="number" id="correo" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                        <div class="col-auto ">
+                            <label for="correo" class="col-form-label">/Hectárea </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">33. VALOR TOTAL DEL TERRENO</label>
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <label for="correo" class="col-form-label">¢</label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <input required type="number" id="correo" class="form-control" aria-describedby="passwordHelpInline">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <label for="correo" class="col-form-label">(casilla 22Xcasilla 32)</label>
+                            </div>
+                            <div class="row">
+                                <label for="correo" class="col-form-label">Pasar a casilla N°49</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row border">
+                <h5>CUADRO III. DESCRIPCIÓN DE CONSTRUCCIONES, INSTALACIONES Y OBRAS COMPLEMENTARIAS</h5>
+            </div>
+            <div class="row">
+                <table>
+                    <thead>
+                        <tr>
+                            <th><label for="nombre" class="form-label">34. USO</label></th>
+                            <th><label for="nombre" class="form-label">35. EDAD ACTUAL</label></th>
+                            <th><label for="nombre" class="form-label">36. ESTADO</label></th>
+                            <th><label for="nombre" class="form-label">37. N° PISOS</label></th>
+                            <th><label for="nombre" class="form-label">38. NÚMERO APOSENTOS</label></th>
+                            <th><label for="nombre" class="form-label">39. AREA CONSTRUCCION</label></th>
+                            <th><label for="nombre" class="form-label">40. VALOR POR M2</label></th>
+                            <th><label for="nombre" class="form-label">41. VALOR DE CONSTRUCCION</label></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input required type="text" class="form-control" id="nombre" aria-describedby="emailHelp">
+                                <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp">
+                            </td>
+                            <td>
+                                <input required type="number" class="form-control" id="nombre" aria-describedby="emailHelp">
+                                <input type="number" class="form-control" id="nombre" aria-describedby="emailHelp">
+                            </td>
+                            <td>
+                                <input required type="number" class="form-control" id="nombre" aria-describedby="emailHelp">
+                                <input type="number" class="form-control" id="nombre" aria-describedby="emailHelp">
+                            </td>
+                            <td>
+                                <input required type="number" class="form-control" id="nombre" aria-describedby="emailHelp">
+                                <input type="number" class="form-control" id="nombre" aria-describedby="emailHelp">
+                            </td>
+                            <td>
+                                <input required type="number" class="form-control" id="nombre" aria-describedby="emailHelp">
+                                <input type="number" class="form-control" id="nombre" aria-describedby="emailHelp">
+                            </td>
+                            <td>
+                                <input required type="number" class="form-control" id="nombre" aria-describedby="emailHelp">
+                                <input type="number" class="form-control" id="nombre" aria-describedby="emailHelp">
+                            </td>
+                            <td>
+                                <input required type="number" class="form-control" id="nombre" aria-describedby="emailHelp">
+                                <input type="number" class="form-control" id="nombre" aria-describedby="emailHelp">
+                            </td>
+                            <td>
+                                <input required type="number" class="form-control" id="nombre" aria-describedby="emailHelp">
+                                <input type="number" class="form-control" id="nombre" aria-describedby="emailHelp">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    <label for="correo" class="col-form-label">42. VALOR TOTAL DE LAS CONSTRUCCIONES (Llevar a la casilla N° 50)</label>
+                </div>
+                <div class="col-4">
+                    <div class="row">
+                        <div class="col-auto ">
+                            <label for="correo" class="col-form-label">¢</label>
+                        </div>
+                        <div class="col ">
+                            <input required type="number" id="correo" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <label for="nombre" class="form-label"> 43. DESCRIPCIÓN DE LA OBRA</label>
+                    </div>
+                    <div class="row">
+                        <input required type="text" class="form-control" id="nombre" aria-describedby="emailHelp">
+                        <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp">
+                        <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <label for="nombre" class="form-label">44. PAREDES</label>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <input required type="number" class="form-control" id="nombre" aria-describedby="emailHelp">
+                        <input type="number" class="form-control" id="nombre" aria-describedby="emailHelp">
+                        <input type="number" class="form-control" id="nombre" aria-describedby="emailHelp">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <label for="nombre" class="form-label">45. CUBIERTA</label>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <input required type="number" class="form-control" id="nombre" aria-describedby="emailHelp">
+                        <input type="number" class="form-control" id="nombre" aria-describedby="emailHelp">
+                        <input type="number" class="form-control" id="nombre" aria-describedby="emailHelp">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <label for="nombre" class="form-label">46. CIELOS</label>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <input required type="number" class="form-control" id="nombre" aria-describedby="emailHelp">
+                        <input type="number" class="form-control" id="nombre" aria-describedby="emailHelp">
+                        <input type="number" class="form-control" id="nombre" aria-describedby="emailHelp">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <label for="nombre" class="form-label">47. PISOS</label>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <input required type="number" class="form-control" id="nombre" aria-describedby="emailHelp">
+                        <input type="number" class="form-control" id="nombre" aria-describedby="emailHelp">
+                        <input type="number" class="form-control" id="nombre" aria-describedby="emailHelp">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <label for="nombre" class="form-label">48. BAÑOS</label>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <input required type="number" class="form-control" id="nombre" aria-describedby="emailHelp">
+                        <input type="number" class="form-control" id="nombre" aria-describedby="emailHelp">
+                        <input type="number" class="form-control" id="nombre" aria-describedby="emailHelp">
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center border">
+                <h5>CUADRO IV. DETERMINACION DEL VALOR</h5>
+            </div>
+            <div class="row">
+                <div class="col-7">
+                    <div class="row">
+                        <label for="nombre" class="form-label">49. VALOR TOTAL DEL TERRENO (viene de casilla 33)</label>
+                    </div>
+                    <div class="row">
+                        <label for="nombre" class="form-label">50. VALOR TOTAL DE LA CONSTRUCCION (viene de casilla 41)</label>
+                    </div>
+                    <div class="row">
+                        <label for="nombre" class="form-label">51. VALOR TOTAL DEL TERRENO Y CONSTRUCCION</label>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="row">
+                        <div class="col-1">
+                            <label for="correo" class="col-form-label">¢</label>
+                        </div>
+                        <div class="col-11">
+                            <input required type="number" id="correo" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1">
+                            <label for="correo" class="col-form-label">¢</label>
+                        </div>
+                        <div class="col-11">
+                            <input required type="number" id="correo" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1">
+                            <label for="correo" class="col-form-label">¢</label>
+                        </div>
+                        <div class="col-11">
+                            <input required type="number" id="correo" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2 text-center border">
+                    <p>Declaro que toda la presente información es cierta, correcta y verdadera</p>
+                </div>
+                <div class="col-7 border">
+                    <div class="row">
+                        <input required type="email" id="correo" class="form-control" aria-describedby="passwordHelpInline">
+                    </div>
+                    <div class="row text-center">
+                        <p>FIRMA DEL PROPIETARIO</p>
+                    </div>
+                </div>
+                <div class="col-3 text-center border">
+                    <p>
+                        Este formulario debe ser enviado al correo electronico bsandi@desamparados.go.cr. Consultas al telefono:2217-3551
+                    </p>
+                </div>
+            </div>
+            <center>
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                </div>
+            </center>
+        </form>
+    </div>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.js"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+            'use strict';
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation');
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms).forEach((form) => {
+                form.addEventListener('submit', (event) => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        })();
+    </script>
+</body>
+
+</html>
